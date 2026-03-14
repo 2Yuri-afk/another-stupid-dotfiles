@@ -1,0 +1,80 @@
+Color - Spirited Away
+
+# Main background
+theme[main_bg]="#233c53"
+
+# Main text color
+theme[main_fg]="#A9B9BD"
+
+# Title color
+theme[title]="#91ADB4"
+
+# Highlight for keyboard shortcuts
+theme[hi_fg]="#548B84"
+
+# Selected items
+theme[selected_bg]="#324458"
+theme[selected_fg]="#A9B9BD"
+
+# Inactive text
+theme[inactive_fg]="#788A8C"
+
+# Graph text
+theme[graph_text]="#788A8C"
+
+# Proc misc
+theme[proc_misc]="#89A3BC"
+
+# Box outlines
+theme[cpu_box]="#324458"
+theme[mem_box]="#324458"
+theme[net_box]="#324458"
+theme[proc_box]="#324458"
+
+# Divider
+theme[div_line]="#2a3a4e"
+
+# Temperature — cool to warm
+theme[temp_start]="#548B84"
+theme[temp_mid]="#BD7B45"
+theme[temp_end]="#9F6C70"
+
+# CPU — teal gradient
+theme[cpu_start]="#175570"
+theme[cpu_mid]="#548B84"
+theme[cpu_end]="#91ADB4"
+
+# Free memory
+theme[free_start]="#2a3a4e"
+theme[free_mid]="#548B84"
+theme[free_end]="#91ADB4"
+
+# Cached
+theme[cached_start]="#2a3a4e"
+theme[cached_mid]="#324458"
+theme[cached_end]="#89A3BC"
+
+# Available
+theme[available_start]="#548B84"
+theme[available_mid]="#89A3BC"
+theme[available_end]="#91ADB4"
+
+# Used
+theme[used_start]="#BD7B45"
+theme[used_mid]="#9F6C70"
+theme[used_end]="#9F6C70"
+
+# Download — cool
+theme[download_start]="#175570"
+theme[download_mid]="#548B84"
+theme[download_end]="#91ADB4"
+
+# Upload — warm
+theme[upload_start]="#BD7B45"
+theme[upload_mid]="#9F6C70"
+theme[upload_end]="#9F6C70"
+
+# Process
+theme[process_start]="#175570"
+theme[process_mid]="#548B84"
+theme[process_end]="#91ADB4"

@@ -1,0 +1,147 @@
+[global]
+    ### Display ###
+    monitor = 0
+    follow = mouse
+    
+    ### Geometry ###
+    width = (300, 400)
+    height = 300
+    origin = top-right
+    offset = 20x60
+    
+    scale = 0
+    notification_limit = 5
+    
+    ### Progress bar ###
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    progress_bar_corner_radius = 5
+    
+    ### Appearance ###
+    transparency = 10
+    
+    separator_height = 2
+    separator_color = frame
+    
+    padding = 16
+    horizontal_padding = 16
+    text_icon_padding = 16
+    
+    frame_width = 2
+    
+    corner_radius = 0
+    corners = all
+    
+    gap_size = 8
+    
+    ### Text ###
+    font = GeistMono Nerd Font 9
+    line_height = 0
+    
+    markup = full
+    format = "<b>%s</b>\n%b"
+    
+    alignment = left
+    vertical_alignment = center
+    
+    show_age_threshold = 60
+    ellipsize = middle
+    
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+    
+    ### Icons ###
+    enable_recursive_icon_lookup = true
+    icon_theme = "Papirus-Dark, Adwaita"
+    icon_position = left
+    min_icon_size = 48
+    max_icon_size = 64
+    icon_path = /usr/share/icons/Papirus-Dark/48x48/status/:/usr/share/icons/Papirus-Dark/48x48/devices/:/usr/share/icons/Papirus-Dark/48x48/apps/
+    
+    ### History ###
+    sticky_history = yes
+    history_length = 50
+    
+    ### Misc/Advanced ###
+    dmenu = /usr/bin/rofi -dmenu -p dunst:
+    browser = /usr/bin/xdg-open
+    
+    always_run_script = true
+    
+    title = Dunst
+    class = Dunst
+    
+    ignore_dbusclose = false
+    
+    ### Wayland ###
+    force_xwayland = false
+    
+    ### Mouse ###
+    mouse_left_click = do_action, close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+
+[experimental]
+    per_monitor_dpi = false
+
+[urgency_low]
+    background = "#233c53"
+    foreground = "#788A8C"
+    frame_color = "#91adb4"
+    timeout = 5
+    default_icon = dialog-information
+    
+[urgency_normal]
+    background = "#233c53"
+    foreground = "#A9B9BD"
+    frame_color = "#91adb4"
+    timeout = 5
+    override_pause_level = 30
+    default_icon = dialog-information
+
+[urgency_critical]
+    background = "#233c53"
+    foreground = "#9F6C70"
+    frame_color = "#9F6C70"
+    timeout = 0
+    override_pause_level = 60
+    default_icon = dialog-warning
+
+# Battery notification rules
+[battery_critical]
+    summary = "Battery Critical"
+    background = "#233c53"
+    foreground = "#9F6C70"
+    frame_color = "#9F6C70"
+    timeout = 3
+    urgency = critical
+
+[battery_low]
+    summary = "Battery Low"
+    background = "#233c53"
+    foreground = "#BD7B45"
+    frame_color = "#bd7b45"
+    timeout = 5
+    urgency = normal
+
+[battery_full]
+    summary = "Battery Full"
+    background = "#233c53"
+    foreground = "#548B84"
+    frame_color = "#548b84"
+    timeout = 5
+    urgency = low
+
+# Screenshot notifications
+[screenshot]
+    appname = "screenshot"
+    background = "#233c53"
+    foreground = "#91ADB4"
+    frame_color = "#91adb4"
+    timeout = 3
+
