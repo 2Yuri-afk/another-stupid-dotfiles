@@ -22,7 +22,7 @@ This repository contains configuration files for:
 
 ## Installation
 
-To install these dotfiles:
+To install these dotfiles using GNU Stow:
 
 1. Clone this repository:
 ```bash
@@ -30,22 +30,19 @@ git clone https://github.com/yourusername/dotfiles.git
 cd dotfiles
 ```
 
-2. Copy the configuration files to your home directory:
+2. Install GNU Stow if not already installed:
 ```bash
-# For each directory, copy its contents to ~/.config/
-cp -r hypr/* ~/.config/hypr/
-cp -r waybar/* ~/.config/waybar/
-cp -r rofi/* ~/.config/rofi/
-cp -r kitty/* ~/.config/kitty/
-cp -r fish/* ~/.config/fish/
-cp -r starship/* ~/.config/starship/
-cp -r dunst/* ~/.config/dunst/
-cp -r btop/* ~/.config/btop/
-cp -r fastfetch/* ~/.config/fastfetch/
-cp -r mpv/* ~/.config/mpv/
-cp -r gtk-* ~/.config/
-cp -r pipewire/* ~/.config/pipewire/
-cp -r wireplumber/* ~/.config/wireplumber/
+# For Arch Linux
+sudo pacman -S stow
+
+# For Ubuntu/Debian
+sudo apt install stow
+
+# For Fedora
+sudo dnf install stow
+
+# For macOS (using Homebrew)
+brew install stow
 ```
 
 3. Install required dependencies (example for Arch Linux):
@@ -53,12 +50,32 @@ cp -r wireplumber/* ~/.config/wireplumber/
 sudo pacman -S hyprland waybar rofi kitty fish starship dunst btop fastfetch mpv pipewire wireplumber gtk3 gtk4
 ```
 
-4. Set Fish as your default shell:
+4. Use Stow to symlink the configuration files:
+```bash
+# Stow each module individually
+stow hypr
+stow waybar
+stow rofi
+stow kitty
+stow fish
+stow starship
+stow dunst
+stow btop
+stow fastfetch
+stow mpv
+stow gtk-2.0
+stow gtk-3.0
+stow gtk-4.0
+stow pipewire
+stow wireplumber
+```
+
+5. Set Fish as your default shell:
 ```bash
 chsh -s /usr/bin/fish
 ```
 
-5. Restart your session or reboot for changes to take effect.
+6. Restart your session or reboot for changes to take effect.
 
 ## Customization
 
