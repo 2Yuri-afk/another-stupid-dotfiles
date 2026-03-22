@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal configuration files for Linux desktop setup.
+another stupid dotfiles :3
 
 ![Screenshot](screenshot.png)
 
@@ -70,13 +70,8 @@ stow pipewire
 stow wireplumber
 ```
 
-5. Set Fish as your default shell:
-```bash
-chsh -s /usr/bin/fish
-```
-
-6. Restart your session or reboot for changes to take effect.
+5. Enjoy dumbo
 
 ## Customization
 
-Feel free to modify any of the configuration files to suit your preferences. The screenshot shows the default appearance after installation.
+Feel free to modify any of the configuration files to suit your preferences. The screenshot shows the default vibe of the config
