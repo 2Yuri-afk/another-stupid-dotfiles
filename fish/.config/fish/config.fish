@@ -24,7 +24,14 @@ abbr environment "zeditor .config/hypr/environment.conf"
 abbr keybinds "zeditor .config/hypr/keybinds.conf"
 abbr windowrules "zeditor .config/hypr/windowrules.conf"
 abbr appearance "zeditor .config/hypr/appearance.conf"
+abbr anime "ani-cli"
 
 
 # Starship
 starship init fish | source
+
+# zoxide
+zoxide init fish | source
+
+# fzf
+fzf --fish | source
