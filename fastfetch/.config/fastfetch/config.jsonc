@@ -57,6 +57,12 @@
       "key": " ",
       "keyColor": "33",
     },
+    {
+      "type": "command",
+      "key": " ",
+      "keyColor": "33",
+      "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days",
+    },
     "break",
     "colors",
     "break",

@@ -8,13 +8,14 @@ mesg="DIR: $HOME/Pictures/Screenshots"
 
 # Vertical layout for text options
 list_col='1'
-list_row='3'
+list_row='4'
 win_width='400px'
 
 # Options - Text only
 option_1="Whole Screen"
 option_2="Select an Area"
 option_3="Active Window"
+option_4="Scan Text (Area)"
 
 # Rofi CMD
 rofi_cmd() {
@@ -30,7 +31,7 @@ rofi_cmd() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$option_1\\n$option_2\\n$option_3" | rofi_cmd
+	echo -e "$option_1\\n$option_2\\n$option_3\\n$option_4" | rofi_cmd
 }
 
 # Screenshot
@@ -57,7 +58,7 @@ notify_view() {
 	else
 		notify_cmd='echo'
 	fi
-	
+
 	if [[ -e "$dir/$file" ]]; then
 		${notify_cmd} "Screenshot Saved" "Saved to $dir/$file\nCopied to clipboard"
 	else
@@ -112,6 +113,41 @@ shotarea() {
 	notify_view
 }
 
+
+shotocr() {
+	local tmp="/tmp/ocr_shot_$$.png"
+	local selection
+	selection="$(slurp)" || return 1
+	grim -t png -g "$selection" "$tmp" || return 1
+
+	if ! command -v tesseract > /dev/null 2>&1; then
+		if command -v dunstify > /dev/null 2>&1; then
+			dunstify -u critical --replace=699 "OCR Error" "tesseract not installed.\nRun: sudo pacman -S tesseract tesseract-data-eng"
+		fi
+		rm -f "$tmp"
+		return 1
+	fi
+
+	local ocr_text
+	ocr_text=$(tesseract "$tmp" stdout -l eng 2>/dev/null | sed '/^$/d')
+	rm -f "$tmp"
+
+	if [[ -z "$ocr_text" ]]; then
+		if command -v dunstify > /dev/null 2>&1; then
+			dunstify -u normal --replace=699 "OCR" "No text detected in selection."
+		fi
+		return 0
+	fi
+
+	echo -n "$ocr_text" | wl-copy
+
+	local preview
+	preview=$(echo "$ocr_text" | head -3)
+	if command -v dunstify > /dev/null 2>&1; then
+		dunstify -u low --replace=699 "OCR - Copied to Clipboard" "$preview"
+	fi
+}
+
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
@@ -120,6 +156,8 @@ run_cmd() {
 		shotarea
 	elif [[ "$1" == '--opt3' ]]; then
 		shotwin
+	elif [[ "$1" == '--opt4' ]]; then
+		shotocr
 	fi
 }
 
@@ -141,6 +179,7 @@ case ${chosen} in
     $option_3)
 		run_cmd --opt3
         ;;
+    $option_4)
+		run_cmd --opt4
+        ;;
 esac
-
-

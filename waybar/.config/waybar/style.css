@@ -124,7 +124,7 @@
     color: #222b44;
     padding: 0 8px;
     margin: 5px 2px;
-    /*box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4);*/
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 #pulseaudio {
@@ -132,7 +132,7 @@
     color: #222b44;
     padding: 0 8px;
     margin: 5px 2px;
-    /*box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4);*/
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 #bluetooth {
@@ -140,7 +140,7 @@
     color: #222b44;
     padding: 0 8px;
     margin: 5px 2px;
-    /*box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4);*/
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 #network {
@@ -148,7 +148,7 @@
     color: #222b44;
     padding: 0 8px;
     margin: 5px 2px;
-    /*box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4);*/
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 #battery {
@@ -156,7 +156,7 @@
     color: #222b44;
     padding: 0 8px;
     margin: 5px 2px;
-    /*box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4);*/
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 #custom-screenshot {
@@ -164,7 +164,7 @@
     color: #222b44;
     padding: 0 8px;
     margin: 5px 2px;
-    /*box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4);*/
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 #window {
@@ -181,7 +181,7 @@
     padding: 0 8px;
     margin: 5px 2px;
     margin-right: 4px;
-    /*box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.4);*/
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 #tray {

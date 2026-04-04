@@ -4,6 +4,7 @@ end
 
 set -g fish_greeting ""
 
+
 abbr i "paru -S"
 abbr ui "paru -Rns"
 abbr update "paru -Syyu"
@@ -35,3 +36,5 @@ zoxide init fish | source
 
 # fzf
 fzf --fish | source
+set -gx PATH $PATH ~/bin
+set -gx PATH $PATH ~/bin
