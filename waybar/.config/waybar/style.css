@@ -123,65 +123,72 @@
     background-color: #548b84;
     color: #222b44;
     padding: 0 8px;
-    margin: 5px 2px;
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 5px 1.5px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 #pulseaudio {
     background-color: #89a3bc;
     color: #222b44;
     padding: 0 8px;
-    margin: 5px 2px;
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 5px 1.5px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 #bluetooth {
     background-color: #bd7b45;
     color: #222b44;
     padding: 0 8px;
-    margin: 5px 2px;
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 5px 1.5px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 #network {
     background-color: #91adb4;
     color: #222b44;
     padding: 0 8px;
-    margin: 5px 2px;
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 5px 1.5px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 #battery {
     background-color: #9f6c70;
     color: #222b44;
     padding: 0 8px;
-    margin: 5px 2px;
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 5px 1.5px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 #custom-screenshot {
     background-color: #548b84;
     color: #222b44;
     padding: 0 8px;
-    margin: 5px 2px;
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 5px 1.5px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 #window {
     background-color: #333839;
     color: #788a8c;
     padding: 0 8px;
-    margin: 5px 2px;
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    margin: 5px 1.5px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 #custom-power {
     background-color: #475052;
     color: #a9b9bd;
     padding: 0 8px;
-    margin: 5px 2px;
+    margin: 5px 1.5px;
     margin-right: 4px;
-    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 #tray {
