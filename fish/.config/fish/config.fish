@@ -26,7 +26,7 @@ abbr keybinds "zeditor .config/hypr/keybinds.conf"
 abbr windowrules "zeditor .config/hypr/windowrules.conf"
 abbr appearance "zeditor .config/hypr/appearance.conf"
 abbr anime "ani-cli"
-
+abbr push "git add . && git commit -m "things" && git push origin main"
 
 # Starship
 starship init fish | source
