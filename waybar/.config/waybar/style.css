@@ -221,6 +221,11 @@
     color: #222b44;
 }
 
+/* Battery states override */
+#battery.warning {
+    animation: flicker-slow 2s infinite;
+}
+
 tooltip {
     background-color: #333839;
     border: 1px solid #475052;

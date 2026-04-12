@@ -63,7 +63,7 @@
     "on-click": "kitty --title impala -e impala"
   },
   "battery": {
-    "states": {
+"states": {
       "warning": 20,
       "critical": 10
     },
