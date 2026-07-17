@@ -21,11 +21,11 @@ STATUS=$(cat "$BATTERY_PATH/status" 2>/dev/null || echo "Unknown")
 
 # Initialize state file if it doesn't exist
 if [[ ! -f "$STATE_FILE" ]]; then
-    echo "LAST_LEVEL=0" > "$STATE_FILE"
-    echo "LAST_STATUS=Unknown" >> "$STATE_FILE"
-    echo "NOTIFIED_10=false" >> "$STATE_FILE"
-    echo "NOTIFIED_20=false" >> "$STATE_FILE"
-    echo "NOTIFIED_100=false" >> "$STATE_FILE"
+    echo "LAST_LEVEL='0'" > "$STATE_FILE"
+    echo "LAST_STATUS='Unknown'" >> "$STATE_FILE"
+    echo "NOTIFIED_10='false'" >> "$STATE_FILE"
+    echo "NOTIFIED_20='false'" >> "$STATE_FILE"
+    echo "NOTIFIED_100='false'" >> "$STATE_FILE"
 fi
 
 # Load previous state
@@ -91,9 +91,9 @@ fi
 
 # Save current state
 cat > "$STATE_FILE" << EOF
-LAST_LEVEL=$CAPACITY
-LAST_STATUS=$STATUS
-NOTIFIED_10=$NOTIFIED_10
-NOTIFIED_20=$NOTIFIED_20
-NOTIFIED_100=$NOTIFIED_100
+LAST_LEVEL='$CAPACITY'
+LAST_STATUS='$STATUS'
+NOTIFIED_10='$NOTIFIED_10'
+NOTIFIED_20='$NOTIFIED_20'
+NOTIFIED_100='$NOTIFIED_100'
 EOF

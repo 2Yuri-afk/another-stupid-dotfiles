@@ -1,19 +1,19 @@
-/* waybar-matched palette */
+/* dark elf night palette */
 
 * {
-    background:     #2a3a4e;
-    background-alt: #324458;
-    foreground:     #A9B9BD;
-    selected:       #3d5570;
-    active:         #89A3BC;
-    urgent:         #9F6C70;
+    background:     #1e2128;
+    background-alt: #282c33;
+    foreground:     #91acc3;
+    selected:       #343b47;
+    active:         #778a9c;
+    urgent:         #8c4a52;
     
     normal-background:           @background;
     normal-foreground:           @foreground;
     alternate-normal-background: @background-alt;
     alternate-normal-foreground: @foreground;
     selected-normal-background:  @selected;
-    selected-normal-foreground:  #2a3a4e;
+    selected-normal-foreground:  #1e2128;
     
     active-background:           @active;
     active-foreground:           @background;
@@ -29,6 +29,6 @@
     selected-urgent-background:  @urgent;
     selected-urgent-foreground:  @background;
     
-    border-color:               #324458;
-    separatorcolor:             #324458;
+    border-color:               #282c33;
+    separatorcolor:             #282c33;
 }

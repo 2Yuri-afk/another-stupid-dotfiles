@@ -90,24 +90,24 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#233c53"
-    foreground = "#788A8C"
-    frame_color = "#91adb4"
+    background = "#282c33"
+    foreground = "#636d7b"
+    frame_color = "#343b47"
     timeout = 5
     default_icon = dialog-information
     
 [urgency_normal]
-    background = "#233c53"
-    foreground = "#A9B9BD"
-    frame_color = "#91adb4"
+    background = "#282c33"
+    foreground = "#91acc3"
+    frame_color = "#343b47"
     timeout = 5
     override_pause_level = 30
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#233c53"
-    foreground = "#9F6C70"
-    frame_color = "#9F6C70"
+    background = "#282c33"
+    foreground = "#8c4a52"
+    frame_color = "#8c4a52"
     timeout = 0
     override_pause_level = 60
     default_icon = dialog-warning
@@ -115,33 +115,33 @@
 # Battery notification rules
 [battery_critical]
     summary = "Battery Critical"
-    background = "#233c53"
-    foreground = "#9F6C70"
-    frame_color = "#9F6C70"
+    background = "#282c33"
+    foreground = "#8c4a52"
+    frame_color = "#8c4a52"
     timeout = 3
     urgency = critical
 
 [battery_low]
     summary = "Battery Low"
-    background = "#233c53"
-    foreground = "#BD7B45"
-    frame_color = "#bd7b45"
+    background = "#282c33"
+    foreground = "#a65d50"
+    frame_color = "#a65d50"
     timeout = 5
     urgency = normal
 
 [battery_full]
     summary = "Battery Full"
-    background = "#233c53"
-    foreground = "#548B84"
-    frame_color = "#548b84"
+    background = "#282c33"
+    foreground = "#4a8c6a"
+    frame_color = "#4a8c6a"
     timeout = 5
     urgency = low
 
 # Screenshot notifications
 [screenshot]
     appname = "screenshot"
-    background = "#233c53"
-    foreground = "#91ADB4"
-    frame_color = "#91adb4"
+    background = "#282c33"
+    foreground = "#8ca3b9"
+    frame_color = "#343b47"
     timeout = 3
 

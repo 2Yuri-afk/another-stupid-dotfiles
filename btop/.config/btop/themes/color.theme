@@ -1,80 +1,80 @@
-Color - Spirited Away
+Color - Dark Elf Night
 
 # Main background
-theme[main_bg]="#233c53"
+theme[main_bg]="#1c1d24"
 
 # Main text color
-theme[main_fg]="#A9B9BD"
+theme[main_fg]="#91acc3"
 
 # Title color
-theme[title]="#91ADB4"
+theme[title]="#8ca3b9"
 
 # Highlight for keyboard shortcuts
-theme[hi_fg]="#548B84"
+theme[hi_fg]="#4a8c6a"
 
 # Selected items
-theme[selected_bg]="#324458"
-theme[selected_fg]="#A9B9BD"
+theme[selected_bg]="#282c33"
+theme[selected_fg]="#91acc3"
 
 # Inactive text
-theme[inactive_fg]="#788A8C"
+theme[inactive_fg]="#636d7b"
 
 # Graph text
-theme[graph_text]="#788A8C"
+theme[graph_text]="#636d7b"
 
 # Proc misc
-theme[proc_misc]="#89A3BC"
+theme[proc_misc]="#778a9c"
 
 # Box outlines
-theme[cpu_box]="#324458"
-theme[mem_box]="#324458"
-theme[net_box]="#324458"
-theme[proc_box]="#324458"
+theme[cpu_box]="#282c33"
+theme[mem_box]="#282c33"
+theme[net_box]="#282c33"
+theme[proc_box]="#282c33"
 
 # Divider
-theme[div_line]="#2a3a4e"
+theme[div_line]="#1e2128"
 
 # Temperature — cool to warm
-theme[temp_start]="#548B84"
-theme[temp_mid]="#BD7B45"
-theme[temp_end]="#9F6C70"
+theme[temp_start]="#4a8c6a"
+theme[temp_mid]="#a65d50"
+theme[temp_end]="#8c4a52"
 
-# CPU — teal gradient
-theme[cpu_start]="#175570"
-theme[cpu_mid]="#548B84"
-theme[cpu_end]="#91ADB4"
+# CPU — emerald gradient
+theme[cpu_start]="#2f5040"
+theme[cpu_mid]="#4a8c6a"
+theme[cpu_end]="#8ca3b9"
 
 # Free memory
-theme[free_start]="#2a3a4e"
-theme[free_mid]="#548B84"
-theme[free_end]="#91ADB4"
+theme[free_start]="#1e2128"
+theme[free_mid]="#4a8c6a"
+theme[free_end]="#8ca3b9"
 
 # Cached
-theme[cached_start]="#2a3a4e"
-theme[cached_mid]="#324458"
-theme[cached_end]="#89A3BC"
+theme[cached_start]="#1e2128"
+theme[cached_mid]="#282c33"
+theme[cached_end]="#778a9c"
 
 # Available
-theme[available_start]="#548B84"
-theme[available_mid]="#89A3BC"
-theme[available_end]="#91ADB4"
+theme[available_start]="#4a8c6a"
+theme[available_mid]="#778a9c"
+theme[available_end]="#8ca3b9"
 
 # Used
-theme[used_start]="#BD7B45"
-theme[used_mid]="#9F6C70"
-theme[used_end]="#9F6C70"
+theme[used_start]="#a65d50"
+theme[used_mid]="#8c4a52"
+theme[used_end]="#8c4a52"
 
 # Download — cool
-theme[download_start]="#175570"
-theme[download_mid]="#548B84"
-theme[download_end]="#91ADB4"
+theme[download_start]="#2f5040"
+theme[download_mid]="#4a8c6a"
+theme[download_end]="#8ca3b9"
 
 # Upload — warm
-theme[upload_start]="#BD7B45"
-theme[upload_mid]="#9F6C70"
-theme[upload_end]="#9F6C70"
+theme[upload_start]="#a65d50"
+theme[upload_mid]="#8c4a52"
+theme[upload_end]="#8c4a52"
 
 # Process
-theme[process_start]="#175570"
-theme[process_mid]="#548B84"
-theme[process_end]="#91ADB4"
+theme[process_start]="#2f5040"
+theme[process_mid]="#4a8c6a"
+theme[process_end]="#8ca3b9"

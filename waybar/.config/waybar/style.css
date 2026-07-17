@@ -1,4 +1,4 @@
-/* soft night — text bar with colored squares */
+/* frieren */
 
 * {
     font-family: "GeistMono Nerd Font", monospace;
@@ -10,10 +10,16 @@
 }
 
 #waybar {
-    background-color: #233c53;
-    color: #a9b9bd;
+    background-color: #1c1d24;
+    color: #91acc3;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+window#waybar>box {
+    margin: 0 2px 4px 2px;
+    background-color: rgba(28, 29, 36, 0.8);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.45), 0 1px 3px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* WORKSPACES — centered, square */
@@ -31,7 +37,7 @@
     margin: 4px 2px;
     border-radius: 4px;
     background-color: transparent;
-    color: #788a8c;
+    color: #636d7b;
     font-family: "GeistMono Nerd Font", monospace;
     font-size: 12px;
     font-weight: bold;
@@ -39,82 +45,131 @@
 }
 
 #workspaces button.active {
-    color: #222b44;
+    color: #1c1d24;
     border-radius: 0;
 }
 
 #workspaces button:nth-child(1).active {
-    background-color: #548b84;
+    background-color: #4a8c6a;
 }
 
 #workspaces button:nth-child(2).active {
-    background-color: #89a3bc;
+    background-color: #778a9c;
 }
 
 #workspaces button:nth-child(3).active {
-    background-color: #bd7b45;
+    background-color: #a65d50;
 }
 
 #workspaces button:nth-child(4).active {
-    background-color: #91adb4;
+    background-color: #8ca3b9;
 }
 
 #workspaces button:nth-child(5).active {
-    background-color: #9f6c70;
+    background-color: #8c4a52;
 }
 
 #workspaces button:nth-child(6).active {
-    background-color: #548b84;
+    background-color: #4a8c6a;
 }
 
 #workspaces button:hover {
-    background-color: #475052;
-    color: #a9b9bd;
+    background-color: #394252;
+    color: #91acc3;
 }
 
 /* LEFT MODULES — box style */
-#clock, #cpu, #memory, #power-profiles-daemon, #window {
-    background-color: #333839;
+#clock,
+#cpu,
+#memory,
+#power-profiles-daemon,
+#window {
+    background-color: #282c33;
     padding: 0 8px;
     margin: 5px 1.5px;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.35);
 }
 
-#clock { color: #548b84; }
-#cpu { color: #89a3bc; }
-#memory { color: #bd7b45; }
-#window { color: #788a8c; }
+#clock {
+    color: #4a8c6a;
+}
 
-#power-profiles-daemon.performance { color: #9f6c70; }
-#power-profiles-daemon.balanced { color: #548b84; }
-#power-profiles-daemon.power-saver { color: #89a3bc; }
+#cpu {
+    color: #778a9c;
+}
+
+#memory {
+    color: #a65d50;
+}
+
+#window {
+    color: #636d7b;
+}
+
+#power-profiles-daemon.performance {
+    color: #8c4a52;
+}
+
+#power-profiles-daemon.balanced {
+    color: #4a8c6a;
+}
+
+#power-profiles-daemon.power-saver {
+    color: #778a9c;
+}
 
 #custom-gpu {
-    color: #788a8c;
+    color: #636d7b;
     padding: 0 4px;
     margin: 0 4px;
     font-size: 12px;
 }
 
 /* RIGHT MODULES — box style */
-#backlight, #pulseaudio, #bluetooth, #network, #battery, #custom-screenshot, #custom-power {
-    background-color: #333839;
+#backlight,
+#pulseaudio,
+#bluetooth,
+#network,
+#battery,
+#custom-screenshot,
+#custom-power {
+    background-color: #282c33;
     padding: 0 8px;
     margin: 5px 1.5px;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.35);
 }
 
-#backlight { color: #548b84; }
-#pulseaudio { color: #89a3bc; }
-#bluetooth { color: #bd7b45; }
-#network { color: #91adb4; }
-#battery { color: #9f6c70; }
-#custom-screenshot { color: #548b84; }
-#custom-power { color: #a9b9bd; }
+#backlight {
+    color: #4a8c6a;
+}
+
+#pulseaudio {
+    color: #778a9c;
+}
+
+#bluetooth {
+    color: #a65d50;
+}
+
+#network {
+    color: #8ca3b9;
+}
+
+#battery {
+    color: #8c4a52;
+}
+
+#custom-screenshot {
+    color: #4a8c6a;
+}
+
+#custom-power {
+    color: #91acc3;
+}
 
 #tray {
     background-color: transparent;
-    color: #788a8c;
+    color: #636d7b;
     margin: 0 4px;
     padding: 0;
 }
@@ -133,22 +188,22 @@
 
 /* Battery states override */
 #battery.warning {
-    color: #bd7b45;
+    color: #a65d50;
 }
 
 #battery.critical {
-    color: #9f6c70;
+    color: #8c4a52;
 }
 
 
 
 tooltip {
-    background-color: #333839;
-    border: 1px solid #475052;
+    background-color: #282c33;
+    border: 1px solid #394252;
     border-radius: 12px;
     padding: 10px;
 }
 
 tooltip label {
-    color: #a9b9bd;
+    color: #91acc3;
 }
