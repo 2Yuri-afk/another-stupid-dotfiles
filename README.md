@@ -2,7 +2,7 @@
 
 another stupid dotfiles :3
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot-spirited_away.png)
 
 ## Contents
 
