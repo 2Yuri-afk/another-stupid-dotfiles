@@ -1,7 +1,9 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 30,
+  "height": 24,
+  "font-family": "Geist",
+  "font-size": 10,
   "margin-top": 0,
   "margin-bottom": 0,
   "margin-left": 0,
@@ -109,8 +111,10 @@
     "interval": 1,
     "timezone": "Asia/Manila",
     "format": "{:%A, %B %d  %I:%M:%S %p}",
+    "format-alt": "{:%A, %B %d  %H:%M:%S}",
     "tooltip": true,
-    "tooltip-format": "<tt>{calendar}</tt>",
+    "tooltip-format": "<tt>{calendar}</tt>\n\n24h: {:%H:%M:%S}",
+    "on-click-right": "mode",
     "calendar": {
       "mode": "month",
       "mode-mon-col": 3,
@@ -124,7 +128,7 @@
     }
   },
   "tray": {
-    "icon-size": 16,
+    "icon-size": 13,
     "spacing": 10,
     "show-passive-items": true
   },

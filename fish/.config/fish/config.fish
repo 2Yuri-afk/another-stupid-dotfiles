@@ -38,3 +38,17 @@ zoxide init fish | source
 fzf --fish | source
 set -gx PATH $PATH ~/bin
 set -gx PATH $PATH ~/bin
+
+# Starship
+starship init fish | source
+
+# zoxide
+zoxide init fish | source
+
+# fzf
+fzf --fish | source
+
+# User paths
+fish_add_path ~/bin
+fish_add_path ~/.bun/bin
+fish_add_path ~/go/bin

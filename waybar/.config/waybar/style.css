@@ -12,8 +12,8 @@
 #waybar {
     background-color: #233c53;
     color: #a9b9bd;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 /* WORKSPACES — centered, square */
@@ -26,10 +26,10 @@
 #workspaces button {
     all: initial;
     min-width: 20px;
-    min-height: 20px;
+    min-height: 18px;
     padding: 0 2px;
-    margin: 5px 2px;
-    border-radius: 0;
+    margin: 4px 2px;
+    border-radius: 4px;
     background-color: transparent;
     color: #788a8c;
     font-family: "GeistMono Nerd Font", monospace;
@@ -40,6 +40,7 @@
 
 #workspaces button.active {
     color: #222b44;
+    border-radius: 0;
 }
 
 #workspaces button:nth-child(1).active {
@@ -71,45 +72,22 @@
     color: #a9b9bd;
 }
 
-/* CLOCK */
-#clock {
-    color: #548b84;
-    font-size: 12px;
-    margin-left: 4px;
+/* LEFT MODULES — box style */
+#clock, #cpu, #memory, #power-profiles-daemon, #window {
+    background-color: #333839;
+    padding: 0 8px;
+    margin: 5px 1.5px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* LEFT STATS — plain text */
-#cpu {
-    color: #89a3bc;
-    padding: 0 4px;
-    margin: 0 4px;
-    font-size: 12px;
-}
+#clock { color: #548b84; }
+#cpu { color: #89a3bc; }
+#memory { color: #bd7b45; }
+#window { color: #788a8c; }
 
-#memory {
-    color: #bd7b45;
-    padding: 0 4px;
-    margin: 0 4px;
-    font-size: 12px;
-}
-
-#power-profiles-daemon {
-    padding: 0 4px;
-    margin: 0 4px;
-    font-size: 12px;
-}
-
-#power-profiles-daemon.performance {
-    color: #9f6c70;
-}
-
-#power-profiles-daemon.balanced {
-    color: #548b84;
-}
-
-#power-profiles-daemon.power-saver {
-    color: #89a3bc;
-}
+#power-profiles-daemon.performance { color: #9f6c70; }
+#power-profiles-daemon.balanced { color: #548b84; }
+#power-profiles-daemon.power-saver { color: #89a3bc; }
 
 #custom-gpu {
     color: #788a8c;
@@ -118,78 +96,21 @@
     font-size: 12px;
 }
 
-/* RIGHT MODULES — colored square tags */
-#backlight {
-    background-color: #548b84;
-    color: #222b44;
-    padding: 0 8px;
-    margin: 5px 1.5px;
-    border-radius: 2px;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-}
-
-#pulseaudio {
-    background-color: #89a3bc;
-    color: #222b44;
-    padding: 0 8px;
-    margin: 5px 1.5px;
-    border-radius: 2px;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-}
-
-#bluetooth {
-    background-color: #bd7b45;
-    color: #222b44;
-    padding: 0 8px;
-    margin: 5px 1.5px;
-    border-radius: 2px;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-}
-
-#network {
-    background-color: #91adb4;
-    color: #222b44;
-    padding: 0 8px;
-    margin: 5px 1.5px;
-    border-radius: 2px;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-}
-
-#battery {
-    background-color: #9f6c70;
-    color: #222b44;
-    padding: 0 8px;
-    margin: 5px 1.5px;
-    border-radius: 2px;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-}
-
-#custom-screenshot {
-    background-color: #548b84;
-    color: #222b44;
-    padding: 0 8px;
-    margin: 5px 1.5px;
-    border-radius: 2px;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-}
-
-#window {
+/* RIGHT MODULES — box style */
+#backlight, #pulseaudio, #bluetooth, #network, #battery, #custom-screenshot, #custom-power {
     background-color: #333839;
-    color: #788a8c;
     padding: 0 8px;
     margin: 5px 1.5px;
     box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
-#custom-power {
-    background-color: #475052;
-    color: #a9b9bd;
-    padding: 0 8px;
-    margin: 5px 1.5px;
-    margin-right: 4px;
-    border-radius: 2px;
-    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
-}
+#backlight { color: #548b84; }
+#pulseaudio { color: #89a3bc; }
+#bluetooth { color: #bd7b45; }
+#network { color: #91adb4; }
+#battery { color: #9f6c70; }
+#custom-screenshot { color: #548b84; }
+#custom-power { color: #a9b9bd; }
 
 #tray {
     background-color: transparent;
@@ -212,19 +133,14 @@
 
 /* Battery states override */
 #battery.warning {
-    background-color: #bd7b45;
-    color: #222b44;
+    color: #bd7b45;
 }
 
 #battery.critical {
-    background-color: #9f6c70;
-    color: #222b44;
+    color: #9f6c70;
 }
 
-/* Battery states override */
-#battery.warning {
-    animation: flicker-slow 2s infinite;
-}
+
 
 tooltip {
     background-color: #333839;
