@@ -1,0 +1,79 @@
+# NightElf GTK-2 theme
+# dark elf night palette
+
+gtk-color-scheme = "
+bg_color:#1e2128
+fg_color:#91acc3
+base_color:#282c33
+text_color:#c8d0d8
+selected_bg_color:#778a9c
+selected_fg_color:#1c1d24
+tooltip_bg_color:#282c33
+tooltip_fg_color:#91acc3
+"
+
+style "default" {
+    bg[NORMAL]      = "#1e2128"
+    bg[PRELIGHT]    = "#343b47"
+    bg[ACTIVE]      = "#282c33"
+    bg[SELECTED]    = "#778a9c"
+    bg[INSENSITIVE] = "#1e2128"
+
+    fg[NORMAL]      = "#91acc3"
+    fg[PRELIGHT]    = "#c8d0d8"
+    fg[ACTIVE]      = "#c8d0d8"
+    fg[SELECTED]    = "#1c1d24"
+    fg[INSENSITIVE] = "#636d7b"
+
+    base[NORMAL]      = "#282c33"
+    base[PRELIGHT]    = "#343b47"
+    base[ACTIVE]      = "#343b47"
+    base[SELECTED]    = "#778a9c"
+    base[INSENSITIVE] = "#1e2128"
+
+    text[NORMAL]      = "#c8d0d8"
+    text[PRELIGHT]    = "#dce1e6"
+    text[ACTIVE]      = "#dce1e6"
+    text[SELECTED]    = "#1c1d24"
+    text[INSENSITIVE] = "#636d7b"
+
+    GtkWidget::focus-padding         = 1
+    GtkWidget::focus-line-width      = 1
+    GtkButton::default-border        = { 0, 0, 0, 0 }
+    GtkRange::trough-border          = 0
+    GtkScrollbar::min-slider-length  = 32
+    GtkCheckButton::indicator-size   = 14
+    GtkRadioButton::indicator-size   = 14
+    GtkEntry::inner-border           = { 2, 2, 2, 2 }
+}
+
+class "*" style "default"
+
+style "menu" {
+    bg[NORMAL]   = "#282c33"
+    fg[NORMAL]   = "#91acc3"
+    bg[SELECTED] = "#343b47"
+    fg[SELECTED] = "#c8d0d8"
+    text[NORMAL] = "#91acc3"
+}
+class "GtkMenu"     style "menu"
+class "GtkMenuItem" style "menu"
+
+style "tooltip" {
+    bg[NORMAL] = "#282c33"
+    fg[NORMAL] = "#91acc3"
+    xthickness = 8
+    ythickness = 4
+}
+class "GtkTooltip" style "tooltip"
+widget "gtk-tooltip*" style "tooltip"
+
+style "treeview" {
+    base[NORMAL]   = "#1e2128"
+    base[SELECTED] = "#343b47"
+    text[NORMAL]   = "#91acc3"
+    text[SELECTED] = "#c8d0d8"
+}
+class "GtkTreeView" style "treeview"
+
+gtk-icon-sizes = "panel=16,16:button=16,16"

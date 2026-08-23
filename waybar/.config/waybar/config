@@ -20,7 +20,6 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "tray",
     "backlight",
     "pulseaudio",
     "bluetooth",
@@ -65,7 +64,7 @@
     "on-click": "kitty --title impala -e impala"
   },
   "battery": {
-"states": {
+    "states": {
       "warning": 20,
       "critical": 10
     },
@@ -126,11 +125,6 @@
         "today": "<span color='#a65d50'><b>{}</b></span>"
       }
     }
-  },
-  "tray": {
-    "icon-size": 13,
-    "spacing": 10,
-    "show-passive-items": true
   },
   "backlight": {
     "device": "intel_backlight",

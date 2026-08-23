@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=NightElf
+Comment=Dark elf night palette — a custom theme by yuri
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=NightElf
+MetacityTheme=NightElf
+IconTheme=hicolor
+CursorTheme=Material Light Cursors
+ButtonLayout=close,minimize,maximize:
